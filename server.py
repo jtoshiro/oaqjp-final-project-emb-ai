@@ -12,7 +12,7 @@ def get_emotion_details():
     response = emotion_detector(text_to_analyze)
 
     # Check if dominant emotion is None, indicating an error or invalid input
-    if dominant_emotion is None:
+    if response['dominant_emotion'] is None:
         return "Invalid input! Try again."
     else:
         # Return a formatted string with the emotion values and dominant emotion
