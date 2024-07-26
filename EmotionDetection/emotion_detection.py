@@ -34,4 +34,11 @@ def emotion_detector(text_to_analyze):
             'dominant_emotion': dominant_emotion
         }
     else:
-        return None
+        return {
+            'anger': None,
+            'disgust': None,
+            'fear': None,
+            'joy': None,
+            'sadness': None,
+            'dominant_emotion': None
+        }
